@@ -82,6 +82,15 @@ def main():
         
         predictions.append(result)
         print('Real Number is:' + repr(test_matrix[i,0])+' Predicted Number :' + repr(result))
+        
+        true_p=0
+    for i in range(len(test_matrix)):
+  		if test_matrix[i][0]==predictions[i]:
+    		true_p+=1
+    
+    #accuracy= (true_positives/total Number of test examples)*100
+    accuracy=(true_po/float(len(test_matrix))) * 100.0
+    print('Accuracy is ' + repr(accuracy) )
     
               
 main()
