@@ -39,7 +39,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_data, Y, test_size=0.15, r
 
 parameter_C = 5
 parameter_gamma = 0.05
-classifier = svm.SVC(C=param_C,gamma=param_gamma)
+classifier = svm.SVC(C=parameter_C,gamma=parameter_gamma)
 
 start_time = dt.datetime.now()
 print('Start learning at {}'.format(str(start_time)))
